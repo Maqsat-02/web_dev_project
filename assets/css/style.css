@@ -1,10 +1,3 @@
-/**
-* Template Name: Remember - v4.5.0
-* Template URL: https://bootstrapmade.com/remember-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -27,44 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #8fc04e;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background: #a2cb6c;
-  color: #fff;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 
-/*--------------------------------------------------------------
-# Disable AOS delay on mobile
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -107,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #0f0f0f;
+  background: black;
 }
 #header .logo h1 {
   font-size: 28px;
@@ -454,7 +410,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .box-heading h4 {
+.home .box-heading h4 {
   font-size: 65px;
   letter-spacing: 1px;
   font-weight: 700;
@@ -466,7 +422,7 @@ section {
   text-transform: uppercase;
   border-radius: 50px;
 }
-.about .box-heading h3 {
+.home .box-heading h3 {
   font-size: 28px;
   font-weight: 700;
   color: #353535;
@@ -488,7 +444,12 @@ line-height: 75px;;
   width: 700px;
   height: 365px;
 }
-
+@media (max-width: 600px) {
+  .poster img{
+    justify-content:space-between;
+    width:fit-content;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
